@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Nanamora</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Kri&sar</a></li>
+                    <li><a href="table.html">Update</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <span class="krisar">Kritik & Saran</span>
+    <div id="contact-from" class="clearfix">
+        <h1>Get In Touch!</h1>
+        <h2>
+            Terimakasih sudah memberi Kritik dan Saran! Dukung kami terus ya!
+        </h2>
+        <form method="post" action="process.php">
+            <label for="name">Name : <span class="required">*</span></label>
+            <input type="text" id="name" name="name" value="" placeholder="Ur Name" required="required" autofocus="autofocus" />
+
+            <label for="email">Email Address: <span class="required">*</span></label>
+            <input type="email" id="email" name="email" value="" placeholder="Ur Email" required="required" />
+
+            <label for="telephone">Telephone: </label>
+            <input type="tel" id="telephone" name="telephone" value="" placeholder="Ur Number" />
+
+            <label for="enquiry">Enquiry: </label>
+            <select name="enquiry" id="enquiry">
+                <option value="general">General</option>
+                <option value="Sales">Reader</option>
+                <option value="Support">Support</option>
+            </select>
+
+            <label for="message">Message: <span class="required">*</span></label>
+            <textarea name="message" id="message" placeholder="Your Message must be grater than 20 charaters" required="required" data-minlenght="20"></textarea>
+
+            <span id="loading"></span>
+            <input type="submit" value="Holla!" id="submit-button" />
+            <p id="req-field-desc"><span class="required">*</span>Indicates a required field</p>
+        </form>
+    </div>
+</body>
+</html>
